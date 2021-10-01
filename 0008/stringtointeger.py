@@ -3,7 +3,7 @@ class Solution:
         ans = 0
         sign = 1
         index = 0
-        s = s.strip() # deleting all leading spaces
+        s = s.strip() #  deleting all leading spaces
         if len(s) == 0:
             return 0
         if s[0] == '-':
@@ -14,5 +14,5 @@ class Solution:
         while index < len(s) and s[index].isdigit():
             ans = ans * 10 + int(s[index])
             index += 1
-        ans = min(max(sign*ans, -2**31), 2**31-1)
+        ans = min(max(sign * ans, - 2 ** 31), 2 ** 31 - 1)
         return ans
