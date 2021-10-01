@@ -1,9 +1,3 @@
-def main():
-    string_value = input('Enter a value: ')
-    solution = Solution()
-    print(solution.convert_string_to_int(string_value))
-
-
 class Solution(object):
     INT_MAX = 2147483647
     INT_MIN = -2147483648
