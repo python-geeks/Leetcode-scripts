@@ -16,4 +16,4 @@ class Solution:
             index += 1
         ans = min(max(sign * ans, - 2 ** 31), 2 ** 31 - 1)
         return ans
-        
+      
