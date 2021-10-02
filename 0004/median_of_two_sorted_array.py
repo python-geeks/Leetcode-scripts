@@ -3,7 +3,7 @@ class Solution:
         x = len(nums1)
         y = len(nums2)
         if y < x:
-            # Making sure our nums1 is the smaller length array
+            # Making sure nums1 is the smaller length array
             return self.findMedianSortedArrays(nums2, nums1)
 
         maxV = float('inf')
