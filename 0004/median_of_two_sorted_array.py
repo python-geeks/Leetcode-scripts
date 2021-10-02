@@ -15,16 +15,16 @@ class Solution:
 
         while start <= end:
             # px -> partitionx and py -> partitiony
-            px = start + (end-start)//2
-            py = (x+y+1)//2 - px
+            px = start + (end - start) // 2
+            py = (x + y + 1) // 2 - px
 
             # leftx, rightx -> edge elements on nums1
             # lefty, righty -> edge elements on nums2
             leftx, rightx, lefty, righty = 0, 0, 0, 0
-            leftx = minV if px == 0 else nums1[px-1]
+            leftx = minV if px == 0 else nums1[px - 1]
             rightx = maxV if px == x else nums1[px]
 
-            lefty = minV if py == 0 else nums2[py-1]
+            lefty = minV if py == 0 else nums2[py - 1]
             righty = maxV if py == y else nums2[py]
 
             if leftx <= righty and lefty <= rightx:
