@@ -9,14 +9,14 @@ class Solution:
         start = 0
 
         # end is the last index of the array
-        end = n-1
+        end = n - 1
 
         while(start <= end):
             # mid = (start+end)//2
             # (start + end) might exceed the range of integers
 
             # better way to do this
-            mid = start + (end - start)//2
+            mid = start + (end - start) // 2
 
             # if target element is equal to the middle element
             if arr[mid] == target:
@@ -44,14 +44,14 @@ class Solution:
         start = 0
 
         # end is the last index of the array
-        end = n-1
+        end = n - 1
 
         while(start <= end):
             # mid = (start+end)//2
             # (start + end) might exceed the range of integers
 
             # better way to do this
-            mid = start + (end - start)//2
+            mid = start + (end - start) // 2
 
             # if target element is equal to the middle element
             if arr[mid] == target:
