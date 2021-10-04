@@ -1,10 +1,13 @@
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 class Solution:
-    def mergeTwoLists(self, head1: ListNode, head2  : ListNode) -> ListNode:
+    def mergeTwoLists(self, head1: ListNode, head2: ListNode) -> ListNode:
         cur1 = head1
         cur2 = head2
 
@@ -22,13 +25,13 @@ class Solution:
                 cur2 = cur2.next
 
         # incase there are any elements left in linked list 1
-        # we add them to mewList
+        # we add them to newList
         while(cur1 is not None):
             newList.append(cur1.val)
             cur1 = cur1.next
 
         # incase there are any elements left in linked list 1
-        # we add them to mewList        
+        # we add them to newList
         while(cur2 is not None):
             newList.append(cur2.val)
             cur2 = cur2.next
@@ -37,7 +40,7 @@ class Solution:
         head = self.createList(newList)
         return head
 
-    def createList(self,a):
+    def createList(self, a):
 
         # traverse through the list and create a linked list
         # return head of the newly created linked list
@@ -53,10 +56,5 @@ class Solution:
             else:
                 tail.next = newNode
                 tail = newNode
-
+        # return head of the newly created linked list
         return head
-
-    
-        
-
-
