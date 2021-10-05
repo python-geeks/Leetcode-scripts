@@ -8,5 +8,5 @@ class Solution:
             else:
                 result += roman[s[i]]
         else:
-            result += roman[s[-1]]     
+            result += roman[s[-1]]
         return result
