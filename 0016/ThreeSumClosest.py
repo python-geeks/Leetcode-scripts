@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: int
         """
         nums.sort()
-        closest_sum = 2 ** 31-1
+        closest_sum = 2 ** 31 - 1
         for i in range(len(nums)):
             j, k = i + 1, len(nums) - 1
             while j < k:
