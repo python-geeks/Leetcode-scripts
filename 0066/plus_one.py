@@ -11,7 +11,7 @@ class Solution(object):
             if(digits[i] == 9):
                 # if digits[i] in first position i.e 0
                 if(i == 0):
-                    rem = 1 #update rem
+                    rem = 1  # update rem
                 digits[i] = 0
 
             # digit is less than 9: increment 1 in digits[i] and break the loop
