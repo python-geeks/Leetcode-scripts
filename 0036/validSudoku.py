@@ -36,4 +36,4 @@ class Solution:
                         if temp.count(k) > 1:
                             return False
         # If none of the rules are violated, return true
-        return True        
+        return True     
