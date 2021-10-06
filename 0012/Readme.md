@@ -1,4 +1,5 @@
-# Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+# Given an integer, convert it to a roman numeral
+### Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
 Symbol   |    Value
 I        |     1
@@ -20,7 +21,7 @@ _ I can be placed before V (5) and X (10) to make 4 and 9.
 _ X can be placed before L (50) and C (100) to make 40 and 90. 
 _ C can be placed before D (500) and M (1000) to make 400 and 900.
 
--> Given an integer, convert it to a roman numeral
+
 For Example:
 Input: num = 58  as (50+5+3=58)
 Output: "LVIII"
