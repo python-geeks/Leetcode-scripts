@@ -22,10 +22,10 @@ X can be placed before L (50) and C (100) to make 40 and 90.
 C can be placed before D (500) and M (1000) to make 400 and 900.**
 
 
-For Example:
-Input: num = 58  as (50+5+3=58)
-Output: "LVIII"
-xplanation: L = 50, V = 5, III = 3
+***For Example:
+***Input: num = 58  as (50+5+3=58)
+***Output: "LVIII"
+***Explanation: L = 50, V = 5, III = 3
 -> HINT
 Create a hashmap/array with roman numerals of numbers 1, 2, 3, ..., 9, 10, 20, 30, ..., 90, 100, 200, ..., 1000, 2000, 3000, 4000
 For any given number, find out its one’s, ten’s, hundred’s and thousand’s place and generate the roman number using the generated hash.
