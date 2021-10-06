@@ -1,6 +1,6 @@
 # We declare a stack of unmatched parentheses. As we move, if it is a
 # closing parenthesis, we will check if it matches the parentheses on the top
-# of the stack.
+# of stack.
 
 
 class Solution:
