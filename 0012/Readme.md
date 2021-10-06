@@ -1,4 +1,4 @@
-#Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+# Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
 Symbol   |    Value
 I        |     1
@@ -16,9 +16,9 @@ M        |     1000
 -> Because the one is before the five we subtract it making four.
 -> The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used
 
-_I can be placed before V (5) and X (10) to make 4 and 9. 
-_X can be placed before L (50) and C (100) to make 40 and 90. 
-_C can be placed before D (500) and M (1000) to make 400 and 900.
+_ I can be placed before V (5) and X (10) to make 4 and 9. 
+_ X can be placed before L (50) and C (100) to make 40 and 90. 
+_ C can be placed before D (500) and M (1000) to make 400 and 900.
 
 -> Given an integer, convert it to a roman numeral
 For Example:
