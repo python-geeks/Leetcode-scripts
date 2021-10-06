@@ -21,3 +21,4 @@ class Solution:
                 unique_characters.remove(s[start])
                 start += 1
         return maxLength
+    
