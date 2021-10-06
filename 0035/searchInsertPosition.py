@@ -7,10 +7,10 @@ class Solution:
         start = 0
         end = len(nums) - 1
 
-        mid = start + (end-start)//2
+        mid = start + (end - start) // 2
 
         while start <= end:
-            mid = start + (end-start)//2
+            mid = start + (end - start) // 2
 
             if nums[mid] == target:
                 return mid
@@ -20,5 +20,5 @@ class Solution:
 
             else:
                 end = mid - 1
-                      
+
         return start
