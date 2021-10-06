@@ -31,7 +31,9 @@ ________________________________________________________________________________
 ->Explanation: L = 50, V = 5, III = 3
 
 
--> HINT
+###HINT
+
+
 Create a hashmap/array with roman numerals of numbers 1, 2, 3, ..., 9, 10, 20, 30, ..., 90, 100, 200, ..., 1000, 2000, 3000, 4000
 For any given number, find out its one’s, ten’s, hundred’s and thousand’s place and generate the roman number using the generated hash.
 
