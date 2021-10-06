@@ -3,15 +3,18 @@ Merge with Divide And Conquer
 
 Pair up k lists and merge each pair.
 
-After the first pairing, k lists are merged into k/2 lists with average 2N/k length, then k/4, k/8 and so on.
+After the first pairing, k lists are merged into k/2 lists with
+average 2N/k length, then k/4, k/8 and so on.
 
 Repeat this procedure until we get the final sorted linked list.
 """
+
 
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 class Solution(object):
     def mergeKLists(self, lists):
@@ -39,7 +42,7 @@ class Solution(object):
                 l1 = point.next.next
             point = point.next
         if not l1:
-            point.next=l2
+            point.next = l2
         else:
-            point.next=l1
+            point.next = l1
         return head.next
