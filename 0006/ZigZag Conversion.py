@@ -11,6 +11,9 @@ class Solution:
             result[nRow] = result[nRow] + s[i]        # store characters
             if reverse is False:
                 nRow += 1
+                
+                
+                
             else:
                 nRow -= 1
             # change direction
