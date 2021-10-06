@@ -14,6 +14,7 @@ Write the code that will take a string and make this conversion given a number o
 ## Examples
 
 * Example 1
+
 Input: s = "PAYPALISHIRING", numRows = 3
 
 Output: "PAHNAPLSIIGYIR"
@@ -35,6 +36,7 @@ Y A   H R
 P     I 
 
 * Example 3
+
 Input: s = "A", numRows = 1
 
 Output: "A"
