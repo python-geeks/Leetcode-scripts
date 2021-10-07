@@ -1,8 +1,8 @@
-//  ->First Try Yourself read Readme.md for a hint
+# First Try Yourself read Readme.md for a hint
 
-Python Code:-
+# Python Code:-
 
-1). 
+# 1). 
 
 table = [
     ("M", 1000), ("CM", 900), ("D", 500),
@@ -34,7 +34,7 @@ while True:
     print(to_roman(int(s)))
 
 
-2).
+# 2).
 
 class Solution:
     def intToRoman(self, num: int) -> str:
@@ -45,7 +45,7 @@ class Solution:
         
         return M[num//1000]+C[(num//100)%10]+X[(num//10)%10]+I[num%10]
 
-3).
+# 3).
 
 class Solution:
     # @param A : integer
