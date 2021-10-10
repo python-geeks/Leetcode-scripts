@@ -2,7 +2,7 @@
 
 def seive(Max):
     primes = []
-    isprime = [False]*(Max)
+    isprime = [False] * (Max)
     maxN = Max
     if maxN < 2:
         return 0
@@ -10,7 +10,7 @@ def seive(Max):
         isprime[0] = isprime[1] = True
     for i in range(2, maxN):
         if (isprime[i] is False):
-            for j in range(i*i, maxN, i):
+            for j in range(i * i, maxN, i):
                 isprime[j] = True
     for i in range(Max):
         if isprime[i] is False:
