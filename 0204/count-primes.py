@@ -1,3 +1,4 @@
+
 # I have used sieve of erato algorithm to solve this problem
 
 def seive(Max):
