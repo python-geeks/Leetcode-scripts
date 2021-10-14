@@ -6,7 +6,7 @@ class Solution:
         end = len(arr) - 1
 
         while start <= end:
-            mid = start + (end-start)//2
+            mid = start + (end - start) // 2
             if arr[mid] == target:
                 return mid
             elif target < arr[mid]:
