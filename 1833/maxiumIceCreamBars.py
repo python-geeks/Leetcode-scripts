@@ -7,6 +7,5 @@ class Solution:
                 break
             coins -= c
             total += 1
-        
+
         return total
-    
