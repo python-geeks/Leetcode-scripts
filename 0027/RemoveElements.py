@@ -8,8 +8,9 @@ class Solution:
 
         for n in range(len(nums)):
 
+            # checks which element in the array does not match with val
             if nums[n] != val:
                 nums[k] = nums[n]
-                k += 1
+                k += 1  # increments the value of k by 1
 
         return k
