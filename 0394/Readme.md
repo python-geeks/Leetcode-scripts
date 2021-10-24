@@ -1,29 +1,38 @@
-# 204. Count Primes
+# 394. Decode String
 
-Given an integer n, return the number of prime numbers that are strictly less than n.
+Given an encoded string, return its decoded string.
 
+The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer.
+
+You may assume that the input string is always valid; No extra white spaces, square brackets are well-formed, etc.
+
+Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, k. For example, there won't be input like 3a or 2[4].
 ### Examples:
 
 Example 1:
-
-    Input: n = 10
-    Output: 4
-    Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
-
+ 
+    Input: s = "3[a]2[bc]"
+    Output: "aaabcbc"
 
 Example 2:
 
-    Input: n = 0
-    Output: 0
+    Input: s = "3[a2[c]]"
+    Output: "accaccacc"
 
 Example 3:
 
-    Input: n = 1
-    Output: 0
- 
+    Input: s = "2[abc]3[cd]ef"
+    Output: "abcabccdcdcdef"
 
+Example 4:
+
+    Input: s = "abc3[cd]xyz"
+    Output: "abccdcdcdxyz"
 ## Constraints:
 
-    0 <= n <= 5 * 106
+    1 <= s.length <= 30
+    s consists of lowercase English letters, digits, and square brackets '[]'.
+    s is guaranteed to be a valid input.
+    All the integers in s are in the range [1, 300].
 
-#### Question link : [204_count_primes](https://leetcode.com/problems/count-primes/)
+#### Question link : [394_decode_string](https://leetcode.com/problems/decode-string/)
