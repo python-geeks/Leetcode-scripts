@@ -31,4 +31,3 @@ class Solution:
         if stack:
             final += ''.join(stack)
         return final
- 
