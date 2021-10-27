@@ -1,27 +1,34 @@
-class Solution:class Solution:
+class Solution:
     def decodeString(self, s: str) -> str:
-        # Time: O(n)
-        # Space: O(n)
+        ## assuming a valid string is provided s != ("1[a", "2[[2ac]]")
+        def get_char():
+            res = ""
+            while stack and not stack[-1] == '[':
+                res = stack.pop() + res
+            return res
         
-        stack  = []
-        
-        for c in s:
-            if c != ']':
-                stack.append(c)
-            else:
-                print(stack)
-                string = ""
-                num = ""
-                temp = ""
-
-                while stack[-1] != '[':
-                    string = stack.pop() + string
-                stack.pop()
+        def get_num():
+            num = ""
+            while stack and stack[-1].isdigit():
+                num = stack.pop() + num
+            return num
                 
-                while stack and stack[-1].isdigit():
-                    num = stack.pop() + num
-
-                for i in range(int(num)):
-                    temp += string
-                stack.append(temp)
-        return "".join(stack)
+        final= ""
+        stack = []
+        for ele in s:
+            if ele == "]": # pop routine
+                res = get_char()
+                stack.pop()  # removing the "[" bracket
+                num = get_num()
+                if num:
+                    res = int(num) * res
+                if stack == []:
+                    final += res
+                else:
+                    stack.append(res)
+            else:
+                stack.append(ele)
+        if stack:
+            final += ''.join(stack)
+        return final
+ 
