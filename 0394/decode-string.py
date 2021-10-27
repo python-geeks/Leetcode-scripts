@@ -6,6 +6,7 @@ class Solution:
             i += 1
         # i + 1 to skip the [
         return i + 1, digit
+    
     def decode_word(self, i: int, s: str):
         concat = ""
         while(i < len(s) and s[i] != "]"):
@@ -17,7 +18,7 @@ class Solution:
                 concat += s[i]
                 i += 1
         return i + 1, concat
+    
     def decodeString(self, s: str) -> str:
         i, word = self.decode_word(0, s)
         return word
-    
