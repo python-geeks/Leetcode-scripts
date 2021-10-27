@@ -25,3 +25,4 @@ class Solution:class Solution:
                     temp += string
                 stack.append(temp)
         return "".join(stack)
+    
