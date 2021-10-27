@@ -1,14 +1,15 @@
-import math
 class Solution:
-    def checkStraightLine(self, coord: List[List[int]]) -> bool:
-        coord = sorted(coord)
-        x = []
-        for i in range(len(coord)-1):
-            if((coord[i][0] - coord[i+1][0])==0):
-                if((coord[i][1] - coord[i+1][1])>0):
-                    x.append(math.atan(float("inf")))
-                elif((coord[i][1] - coord[i+1][1])<0):
-                    x.append(math.atan(float("-inf")))
-            else:
-                x.append(math.atan((coord[i][1] - coord[i+1][1])/(coord[i][0] - coord[i+1][0])))
-        return True if(len(set(x))== 1) else False
+    def checkStraightLine(self, A: List[List[int]]) -> bool:
+        results = []
+        for i in A:
+            for j in A:
+                try:
+                    results.append(
+                        (i[1]-j[1]) / (i[0]-j[0])
+                    )
+                except:
+                    pass
+        return all([
+            i == results[0]
+            for i in results
+        ])
