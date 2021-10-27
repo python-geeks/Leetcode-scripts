@@ -1,15 +1,6 @@
+from typing import List
 class Solution:
-    def checkStraightLine(self, A: List[List[int]]) -> bool:
-        results = []
-        for i in A:
-            for j in A:
-                try:
-                    results.append(
-                        (i[1]-j[1]) / (i[0]-j[0])
-                    )
-                except:
-                    pass
-        return all([
-            i == results[0]
-            for i in results
-        ])
+    def checkStraightLine(self, coords: List[List[int]]) -> bool:
+        if len(set(x for x, y in coords)) == 1: return True 
+        if len(set(x for x, y in coords)) < len(coords): return False
+        return len(set((p1[1] - p2[1])/(p1[0] - p2[0]) for p1, p2 in zip(coords, coords[1:]))) == 1
