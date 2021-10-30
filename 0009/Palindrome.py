@@ -1,10 +1,16 @@
-def isPalindrome(self, x: int) -> bool:
-	if x < 0 or (x > 0 and x%10 == 0):   # if x is negative, return False. if x is positive and last digit is 0, that also cannot form a palindrome, return False.
-		return False
-	
-	result = 0
-	while x > result:
-		result = result * 10 + x % 10
-		x = x // 10
-		
-	return True if (x == result or x == result // 10) else False
+class Solution:
+    def Palindrome(self, a: int) -> bool:
+
+        t = a
+        r = 0
+
+        while( a > 0 ):
+
+            q = a % 10  
+            r = r * 10 + q 
+            a = a // 10
+
+        if ( t == r ):  
+            return True
+        else:  
+            return False
