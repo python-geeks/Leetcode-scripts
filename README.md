@@ -1,6 +1,6 @@
-<h1 align=center> Leetcode-scriptss </h1>
+<h1 align=center> Leetcode-scripts </h1>
 
-**Do you know any solution that can help a Panda to be more smarter or to be a coder xD (Only supporting Python solution**
+**Do you know any solution that can help a Panda to be smarter or to be a coder xD (Only supporting Python solution)**
 
 <p align="center">
   <a href="#"><img src="https://forthebadge.com/images/badges/built-with-love.svg" /></a>&nbsp;&nbsp;
@@ -17,7 +17,14 @@
 
 <h1 align="center"> 🎃 HacktoberFest-2021 🎃</h1>
 
-![Opensource](https://img.shields.io/badge/openSource-%E2%9D%A4-blue) ![PR](https://img.shields.io/badge/PRs-welcome-green) ![hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2021-red) ![friendly](https://img.shields.io/badge/beginner-friendly-l)
+<div align="center">
+  
+  <a href="">![Opensource](https://img.shields.io/badge/openSource-❤-blue)</a>
+  <a href="">![PR](https://img.shields.io/badge/PRs-welcome-green)</a>
+  <a href="">![hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2021-red)</a>
+  <a href="">![friendly](https://img.shields.io/badge/beginner-friendly-l)</a>
+  
+</div>
 
 # What is HacktoberFest?
 
