@@ -21,7 +21,7 @@
   
   <a href="">![Opensource](https://img.shields.io/badge/openSource-❤-blue)</a>
   <a href="">![PR](https://img.shields.io/badge/PRs-welcome-green)</a>
-  <a href="">![hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2021-red)</a>
+  <a href="">![hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2022-red)</a>
   <a href="">![friendly](https://img.shields.io/badge/beginner-friendly-l)</a>
   
 </div>
